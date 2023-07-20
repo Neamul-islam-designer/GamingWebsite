@@ -11,7 +11,7 @@
   height: 5927px;
   display: flex;
   overflow: hidden;
-  position: relative;
+  position: absolute;
   align-items: flex-start;
   flex-shrink: 0;
   background-color: rgba(255, 255, 255, 1);
@@ -22,7 +22,7 @@
   width: 1920px;
   height: 130px;
   display: flex;
-  position: relative;
+  position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
   background-color: #f8f8f8;
@@ -33,7 +33,7 @@
   width: 253.04144287109375px;
   height: 53px;
   display: flex;
-  position: relative;
+  position: absolute;
   align-items: center;
   flex-shrink: 1;
   justify-content: flex-end;
