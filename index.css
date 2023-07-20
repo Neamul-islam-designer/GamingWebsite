@@ -22,7 +22,7 @@
   width: 1920px;
   height: 130px;
   display: flex;
-  position: absolute;
+  position: relative;
   align-items: flex-start;
   flex-shrink: 1;
   background-color: #f8f8f8;
@@ -33,7 +33,7 @@
   width: 253.04144287109375px;
   height: 53px;
   display: flex;
-  position: absolute;
+  position: relative;
   align-items: center;
   flex-shrink: 1;
   justify-content: flex-end;
@@ -523,7 +523,10 @@
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
+
 .gamer-rectangle1 {
   top: 0px;
   left: 0px;
@@ -531,6 +534,43 @@
   height: 400px;
   position: absolute;
   border-radius: 16px;
+  object-fit: cover;
+ 
+}
+.overlay{
+  top: 41%;
+  left: 50%;
+  width: 342px;
+  height: 400px;
+  position: absolute;
+  border-radius: 16px;
+  object-fit: cover;
+  background: black;
+  transform: translate(-50%, -50%);
+  display: none;
+  align-content: center;
+  cursor: pointer;
+  border-color: #FF42A5;
+  border: 3px solid;
+  border-width: 2px;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  
+  
+}
+.gamer-subsec1:hover .content{
+  display: block;
+}
+.gamer-subsec1:hover .overlay{
+  display: block;
+  opacity: 0.7;
+  border-color: #F948B2;
+  border-width: 3px;
 }
 .gamer-text029 {
   top: 424px;
@@ -565,6 +605,16 @@
   position: absolute;
   border-radius: 16px;
 }
+
+.gamer-subsec2:hover .content{
+  display: block;
+}
+.gamer-subsec2:hover .overlay{
+  display: block;
+  opacity: 0.7;
+  border-color: #F948B2;
+  border-width: 3px;
+}
 .gamer-text031 {
   top: 424px;
   color: rgba(83, 76, 100, 1);
@@ -596,8 +646,18 @@
   height: 400px;
   position: absolute;
   border-style: solid;
-  border-width: 4px;
+  
   border-radius: 16px;
+}
+
+.gamer-subsec3:hover .content{
+  display: block;
+}
+.gamer-subsec3:hover .overlay{
+  display: block;
+  opacity: 0.7;
+  border-color: #F948B2;
+  border-width: 3px;
 }
 .gamer-text033 {
   left: 0px;
@@ -632,6 +692,16 @@
   height: 400px;
   position: absolute;
   border-radius: 16px;
+}
+
+.gamer-subsec4:hover .content{
+  display: block;
+}
+.gamer-subsec4:hover .overlay{
+  display: block;
+  opacity: 0.7;
+  border-color: #F948B2;
+  border-width: 3px;
 }
 .gamer-text035 {
   top: 424px;
@@ -1157,7 +1227,27 @@ background-clip: text;
   align-items: flex-start;
   flex-shrink: 1;
   background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
+
+.con{
+  top: 0px;
+  left: 0px;
+  width: 243px;
+  height: 80px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border-radius: 50px solid;
+  border-color: #F948B2;
+  display: none;
+}
+.gamer-f5:hover .con{
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
 .gamer-text079 {
   top: 29px;
   left: 86px;
@@ -1778,7 +1868,10 @@ background-clip: text;
   height: 31px;
   position: absolute;
 }
+@media screen and(max-width: 780px) {
+  .gamer-nav-bar{
+    display: flex;
+    align-items: center;
 
-@media screen max-w {
-  
+  }
 }
