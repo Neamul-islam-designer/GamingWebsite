@@ -25,7 +25,7 @@
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #f8f8f8;
 }
 .gamer-logo {
   top: 38px;
@@ -1416,6 +1416,7 @@ background-clip: text;
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
+  
 }
 .gamer-group1 {
   top: 6px;
@@ -1454,41 +1455,14 @@ background-clip: text;
   width: 86px;
   height: 40px;
   position: absolute;
+  display:flex;
 }
-.gamer-vector05 {
-  top: 10.78719425201416px;
-  left: 10.440678596496582px;
-  width: 19px;
-  height: 19px;
-  position: absolute;
-}
-.gamer-vector06 {
-  top: 17.099811553955078px;
-  left: 69.33334350585938px;
-  width: 6px;
-  height: 6px;
-  position: absolute;
-}
-.gamer-vector07 {
-  top: 10.78719425201416px;
-  left: 62.960453033447266px;
-  width: 6px;
-  height: 6px;
-  position: absolute;
-}
-.gamer-vector08 {
-  top: 17.099811553955078px;
-  left: 56.63276672363281px;
-  width: 6px;
-  height: 6px;
-  position: absolute;
-}
-.gamer-vector09 {
-  top: 23.427494049072266px;
-  left: 62.960453033447266px;
-  width: 6px;
-  height: 6px;
-  position: absolute;
+.g2{
+  padding-top:10px ;
+  height: 40px;
+  padding-left: 100px;
+  
+ 
 }
 .gamer-frame4 {
   gap: 60px;
@@ -1803,4 +1777,8 @@ background-clip: text;
   width: 34px;
   height: 31px;
   position: absolute;
+}
+
+@media screen max-w {
+  
 }
